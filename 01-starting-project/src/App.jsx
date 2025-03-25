@@ -1,5 +1,7 @@
 import reactImg from './assets/react-core-concepts.png'
 import componentsImg from './assets/components.png'
+import { CORE_CONCEPTS } from './data'; //name import should be imported in the crully bracket 
+
 const reactDescriptions =['Fundamanetal','Crucial','Core'];
 
 function getRandomInt(max){
@@ -37,7 +39,7 @@ function App() {
           <h2>Core Concept</h2>
           <ul>
         <CoreConcept
-        title="DotNet Developer"
+        title={CORE_CONCEPTS[0].title}
         description ="The core UI building block."
         img={componentsImg}
         />
@@ -45,7 +47,7 @@ function App() {
               title="Learner"
               description = "Hai i am a learner"
               img={componentsImg}/>
-              <CoreConcept/>
+              <CoreConcept />
               <CoreConcept/>
           </ul>
         </section>
