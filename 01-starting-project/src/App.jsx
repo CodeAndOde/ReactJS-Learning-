@@ -1,6 +1,7 @@
 import componentsImg from './assets/components.png';
 import Header from './components/Header.jsx';
-import CoreConcept from './components/CoreConcept.jsx';
+import CoreConcept from './components/CoreConcept'; 
+
 function App() {
   return (
     <div>
